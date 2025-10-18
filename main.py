@@ -1,21 +1,18 @@
-letters = 0
-digits = 0
-spaces = 0
-others = 0
-
-input_str = input()
-
-for char in input_str:
-    if char.isalpha():
-        letters += 1
-    elif char.isdigit():
-        digits += 1
-    elif char.isspace():
-        spaces += 1
+a = 0
+b = 0
+c = 0
+d = 0
+s = input()
+for ch in s:
+    if ch.isalpha():
+        a += 1
+    elif ch.isdigit():
+        b += 1
+    elif ch.isspace():
+        c += 1
     else:
-        others += 1
-
-print(f"英文字符: {letters}")
-print(f"数字: {digits}")
-print(f"空格: {spaces}")
-print(f"其他字符: {others}")
+        d += 1
+print(f"英文字符: {a}")
+print(f"数字: {b}")
+print(f"空格: {c}")
+print(f"其他字符: {d}")
